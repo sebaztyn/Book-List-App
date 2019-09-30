@@ -25,6 +25,6 @@ mongoose.connection.once('open', ()=>{
   console.log('Connected to database');
 })
 
-const port = process.env.NODE_ENV === 'test' ? 3001 : 3000;
+const port = process.env.PORT || 3000;
 
 app.listen(port, ()=>console.log(`GraphQL Server is ready on http://localhost:${port}${server.graphqlPath}`));
