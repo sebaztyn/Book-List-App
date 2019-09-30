@@ -1,7 +1,10 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-   entry:'./client/index.js',
+  output: {
+    path: __dirname + '/dist'
+  },
   devtool: 'cheap-module-source-map',
     resolve: {
     alias: {
@@ -33,8 +36,10 @@ module.exports = {
       }
     ],
   },
-  plugins: [new HtmlWebpackPlugin(
-    { template: 'index.html' }
-  )
+  plugins: [
+    new HtmlWebpackPlugin(
+    { template: 'index.html', fileName: "./index.html" }
+  ),
+  new CleanWebpackPlugin()
   ],
 };
