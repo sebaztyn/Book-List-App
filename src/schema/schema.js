@@ -1,30 +1,30 @@
-import {GraphQLString, GraphQLID, GraphQLObjectType, GraphQLInt, GraphQLList, GraphQLNonNull, GraphQLSchema } from 'graphql';
-import _ from 'lodash';
-import Book from '../models/book'
-import Author from '../models/author'
-import {gql} from 'apollo-server-express';
+// import {GraphQLString, GraphQLID, GraphQLObjectType, GraphQLInt, GraphQLList, GraphQLNonNull, GraphQLSchema } from 'graphql';
+// import _ from 'lodash';
+// import Book from '../models/book'
+// import Author from '../models/author'
+// import {gql} from 'apollo-server-express';
 
-const typeDefs = gql`
-  type Query{
-    user: User
-  }
+// const typeDefs = gql`
+//   type Query{
+//     user: User
+//   }
 
-  type User{
-    firstname: String!
-    lastname: String!
-}
-`;
+//   type User{
+//     firstname: String!
+//     lastname: String!
+// }
+// `;
 
-const resolvers = {
-  Query: {
-    user: ()=>({
-      firstname: 'Chima',
-      lastname: 'Ekeneme'
-    })
-  }
-}
+// const resolvers = {
+//   Query: {
+//     user: ()=>({
+//       firstname: 'Chima',
+//       lastname: 'Ekeneme'
+//     })
+//   }
+// }
 
-export {typeDefs, resolvers};
+// export {typeDefs, resolvers};
 
 
 // const BookType = new GraphQLObjectType({

@@ -110,3 +110,5 @@ dist
 server_db
 
 # End of https://www.gitignore.io/api/node
+# Local Netlify folder
+.netlify

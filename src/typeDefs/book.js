@@ -1,4 +1,4 @@
-import {gql} from 'apollo-server-express';
+const {gql} = require('apollo-server-lambda');
 
 
 const bookType = gql`
@@ -17,4 +17,4 @@ const bookType = gql`
   }
 `;
 
-export default bookType;
+module.exports =  bookType;

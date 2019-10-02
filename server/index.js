@@ -1,11 +1,11 @@
 import '@babel/polyfill';
 import 'dotenv/config';
 import express from 'express';
-import {ApolloServer} from 'apollo-server-express'
-import typeDefs from './typeDefs';
-import resolvers from './resolvers'
-import Book from './models/book'
-import Author from './models/author'
+import {ApolloServer} from 'apollo-server-express';
+import typeDefs from '../src/typeDefs';
+import resolvers from '../src/resolvers'
+import Book from '../src/models/book'
+import Author from '../src/models/author'
 import mongoose from 'mongoose';
 import cors from 'cors';
 

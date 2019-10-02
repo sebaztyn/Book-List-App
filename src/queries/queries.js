@@ -1,4 +1,4 @@
-import {gql} from 'apollo-boost';
+const {gql} = require('apollo-boost');
 
 const getBooksQuery = gql`
 {

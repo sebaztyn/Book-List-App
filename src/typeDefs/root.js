@@ -1,4 +1,4 @@
-import {gql} from 'apollo-server-express';
+const {gql} = require('apollo-server-lambda');
 
 const rootValues = gql`
   type Query {
@@ -14,4 +14,4 @@ const rootValues = gql`
   }
 `;
 
-export default rootValues;
+module.exports = rootValues;

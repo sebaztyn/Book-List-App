@@ -1,4 +1,4 @@
-import {gql} from 'apollo-server-express';
+const {gql} = require('apollo-server-lambda');
 
 
 const authorType = gql`
@@ -18,4 +18,4 @@ const authorType = gql`
   }
 `;
 
-export default authorType;
+module.exports =  authorType;

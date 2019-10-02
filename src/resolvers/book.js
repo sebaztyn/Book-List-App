@@ -1,4 +1,4 @@
-import {ApolloError} from 'apollo-server-express';
+const {ApolloError} = require('apollo-server-lambda');
 
 const bookType = {
   Mutation: {
@@ -29,4 +29,4 @@ const bookType = {
   }
 }
 
-export default bookType;
+module.exports =  bookType;

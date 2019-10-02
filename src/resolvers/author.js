@@ -1,4 +1,4 @@
-import {ApolloError} from 'apollo-server-express';
+const {ApolloError} = require('apollo-server-lambda');
 
 const authorType = {
   Mutation: {
@@ -32,4 +32,4 @@ const authorType = {
   }
 }
 
-export default authorType;
+module.exports =  authorType;
