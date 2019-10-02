@@ -1,4 +1,5 @@
 const {ApolloError} = require('apollo-server-lambda');
+const Author = require("../models/author.js");
 
 const authorType = {
   Mutation: {

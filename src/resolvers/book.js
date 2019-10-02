@@ -1,4 +1,5 @@
 const {ApolloError} = require('apollo-server-lambda');
+const Book = require("../models/book.js");
 
 const bookType = {
   Mutation: {
