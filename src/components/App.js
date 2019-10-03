@@ -6,7 +6,7 @@ import BookList from './BookList.jsx'
 import AddBook from './AddBook.jsx'
 
 
-const client = new ApolloClient({uri: 'http://localhost:3000/graphql'})
+const client = new ApolloClient({uri: '/.netlify/functions/apollo-graphql'})
 
 export class App extends Component {
   render() {
